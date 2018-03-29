@@ -2,11 +2,17 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import store from './store/index';
-//import App from './App';
+import DevTools from './DevTools';
+import {getCountries} from './actions/actions-countries'
 
 render(
 	<Provider store={store}>
-		<h1>New project: country-app</h1>
+		<div>
+			<h1>New project: country-app</h1>
+			<DevTools />
+		</div>
 	</Provider>,
 	document.getElementById('root')
 );
+
+store.dispatch(getCountries());
