@@ -23,7 +23,7 @@ class ContinentsContainer extends Component {
 	render() {
 		return (
 			<div>
-				<select onChange={e => this.chooseContinent(e)}>
+				<select className='form-control input-lg' onChange={e => this.chooseContinent(e)}>
 					<option value='Europa'>Europa</option>
 					<option value='Afryka'>Afryka</option>
 				</select>

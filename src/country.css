@@ -1,6 +1,9 @@
-#root {
+body {
     background: #eee;
-    height: 100vh;
+}
+
+#root {
+    margin: 0 0 5%;
 }
 
 .country-wrapper {
@@ -25,6 +28,7 @@ header {
     width: 115px;
     height: 115px;
     border-radius: 50%;
+    object-fit: cover;
     border: 10px solid #003e9f;
     left: 0;
     right: 0;
@@ -90,8 +94,14 @@ h2 {
 
 .single-country {
     width: 26%;
-    height: 300px;
     margin-top: 50px;
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    top: 2px;
+    right: 2px;
 }
 
 .country-logo-wrapper {
@@ -102,4 +112,9 @@ h2 {
 .country-logo {
     max-width: 100%;
     max-height: 100%;
+}
+
+.form-control {
+    width: 20%;
+    margin: 0 auto;
 }
